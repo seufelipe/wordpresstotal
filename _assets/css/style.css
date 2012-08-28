@@ -1,0 +1,365 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+	background: #fff url( '../images/paper.png' ) fixed;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.4;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+dl {
+	margin: 0;
+}
+
+dt {
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+dd {
+	color: #666;
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+	font-size: 6rem;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 48px;
+	font-size: 4.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a,
+a:visited {
+	font-weight: 400;
+	font-style: italic;
+	color: #666;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* =NAV
+---------------------- */
+
+#nav {
+	position: fixed;
+	right: 20px;
+	z-index: 999;
+}
+
+#nav a {
+	background: #fff;
+	display: block;
+	height: 9px;
+	margin: 0 0 9px 0;
+	opacity: .5;
+	-o-transition: opacity .1s linear;
+	-moz-transition: opacity .1s linear;
+	-webkit-transition: opacity .1s linear;
+	transition: opacity .1s linear;
+	width: 16px;
+}
+
+#nav a.current {
+	opacity: 1;
+}
+
+
+/* =SLIDES
+---------------------- */
+
+.slide {
+	height: 800px;
+	height: 80rem;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+/* WIREFRAMES */
+
+.wireframe {
+	background: url('../images/wireframe.png') center;
+}
+
+.grid {
+	background: #fff;
+	box-shadow: 0 0 6px rgba(107,107,107,.6);
+	margin: 40px auto;
+	margin: 4rem auto;
+	padding: 15px 0 15px 15px;
+	width: 80%;
+}
+  
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wireframe-header,
+.wireframe-footer {
+	background: #eee;
+	margin-right: 15px;
+	padding: 15px;
+}
+
+.wireframe-header {
+	margin-bottom: 15px;
+}
+
+.wireframe-footer {
+	clear: both;
+	color: #999;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+
+.col-1-1 {
+	width: 100%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.module {
+	background: #eee;
+	padding: 15px;
+	padding: 1.5rem;
+	text-align: left
+}
+
+/* =INTRO
+---------------------- */
+
+#intro {
+	background: url('../images/holanda1974.jpg') 50% -75px no-repeat fixed;
+	color: #fff;
+	padding-top: 240px;
+	padding-top: 24rem;
+}
+
+#intro h1 {
+	font-size: 72px;
+	font-size: 7.2rem;
+}
+
+#intro a {
+	color: #fff;
+}
+
+/* =KUNGFU
+---------------------- */
+
+#kungfu {
+	background: #222;
+	padding-top: 160px;
+	padding-top: 16rem;
+}
+
+#img-kungfu {
+	width: 28.59%;
+}
+
+/* =WPSD
+---------------------- */
+
+#photoshop {
+	background: #0075be;
+	padding-top: 160px;
+	padding-top: 16rem;
+}
+
+#img-photoshop {
+	width: 28.59%;
+}
+
+/* =BRIEFING
+---------------------- */
+
+#briefing {
+	padding-top: 160px;
+	padding-top: 16rem;
+}
+
+/* =HOME
+---------------------- */
+
+#home [class*='col-']:first-of-type .module {
+	height: 300px;
+}
+
+/* =ABOUT
+---------------------- */
+
+.team-member {
+	background: #666;
+	border: 2px solid #eee;
+	color: #fff;
+	float: left;
+	height: 120px;
+	padding: 15px;
+	width: 50%;
+}
+
+/* =APPEARANCE
+---------------------- */
+
+#appearance {
+	background: url('../images/wood.png') center;
+	padding-top: 160px;
+	padding-top: 16rem;
+}
+
+/* =CONTACT
+---------------------- */
+
+#contact [class*='col-']:first-of-type .module {
+	height: 300px;
+}
+
+/* =GENERAL
+---------------------- */
+
+#general {
+	padding-top: 160px;
+	padding-top: 16rem;
+}
+
+/* =FINALE
+---------------------- */
+
+#finale {
+	background: url('../images/davidbrent.jpg') 50% -75px no-repeat fixed;
+	padding-top: 300px;
+	padding-top: 30rem;
+}
+
+#finale h2 {
+	font-size: 72px;
+	font-size: 7.2rem;
+}
+
+
+@media (min-width: 1520px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+	html {
+		font-size: 10px;
+	}
+}
+	
+@media (max-width: 1160px) {
+	html {
+		font-size: 9px;
+	}
+}
+	
+@media (max-width: 1040px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 920px) {
+	html {
+		font-size: 7px;
+	}
+}
+	
+@media (max-width: 800px) {
+	html {
+		font-size: 6px;
+	}
+}
+	
+@media (max-width: 680px) {
+	html {
+		font-size: 5px;
+	}
+}
+	
+@media (max-width: 560px) {
+	html {
+		font-size: 4px;
+	}
+}
+	
+@media (max-width: 440px) {
+	html {
+		font-size: 3px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 3px;
+	}
+}
